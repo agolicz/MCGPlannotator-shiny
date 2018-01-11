@@ -168,7 +168,7 @@ server <- function(input, output) {
     else{
       head(v$data,n=nrow(v$data))
     }
-  })
+  }, rownames = TRUE)
   
   output$downloadData <- downloadHandler(
     filename = function() {
